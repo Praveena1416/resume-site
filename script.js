@@ -1,0 +1,1 @@
+(function(){const r=document.documentElement,b=document.getElementById('themeToggle'),s=localStorage.getItem('theme');if(s==='light')r.classList.add('light');b&&b.addEventListener('click',()=>{r.classList.toggle('light');localStorage.setItem('theme',r.classList.contains('light')?'light':'dark')});document.getElementById('year').textContent=new Date().getFullYear();})();
